@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.9.0">
         <meta charset="utf-8">
-        <meta name="keywords" content="私、気になります(我很好奇)">
-        <meta name="description" content="quark">
+        <meta name="keywords" content="标签: 看法, 私、気になります(我很好奇)">
+        <meta name="description" content="标签: 看法 | quark">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -10,7 +10,7 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <title>
-            quark
+            标签: 看法 | quark
         </title>
         <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="favicon.ico">
 
@@ -280,66 +280,9 @@
 
 </header>
 
-            
-<style>
-    .carousel-control {
-        width: 45px;
-        height: 45px;
-        line-height: 55px;
-        border-radius: 45px;
-        background: transparent;
-        cursor: pointer;
-        z-index: 100;
-    }
-
-    #prev-cover {
-        position: absolute;
-        top: 48%;
-        left: 8px;
-    }
-
-    #next-cover {
-        position: absolute;
-        top: 48%;
-        right: 8px;;
-    }
-
-    #prev-cover i {
-        margin-right: 3px;
-    }
-
-    #next-cover i {
-        margin-left: 3px;
-    }
-
-    .carousel-control:hover {
-        background-color:rgba(0, 0, 0, .4);
-    }
-
-    .carousel-control i {
-        color: #fff;
-        font-size: 2.4rem;
-    }
-    
-    html, body {
-        height:100%;
-    }
-
-    #page {
-        height:100%;
-        min-height: 100%;
-        width:100%;
-    }
-</style>
-
-
-
-<div id="page" class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
-    
-
-    <div class="carousel-item red white-text bg-cover about-cover">
-        <div class="container" style="right: 0px;left: 0px;">
-            <div class="row">
+            <div class="bg-cover pd-header about-cover">
+    <div class="container">
+    <div class="row">
     <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
         <div class="brand">
             <div class="title center-align">
@@ -377,147 +320,44 @@
         // 每天切换 banner 图.  Switch banner image every day.
     </script>
     
-
-            <div class="cover-btns">
-                <a href="#indexCard" class="waves-effect waves-light btn">
-                    <i class="fas fa-angle-double-down"></i>开始阅读
-                </a>
-
-                
-                <a href="https://github.com/2000quark" class="waves-effect waves-light btn" target="_blank">
-                    <i class="fab fa-github-alt"></i>Github
-                </a>
-                
-            </div>
-            <div class="cover-social-link">
-    <a href="https://github.com/2000quark" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-    
-
-        
-
-                
-
-                        
-
-                                
-                                    <a href="https://jq.qq.com/?_wv=1027&k=5YY1i80" class="tooltipped" target="_blank" data-tooltip="QQ群联系我: https://jq.qq.com/?_wv=1027&k=5YY1i80" data-position="top" data-delay="50">
-                                        <i class="fab fa-qq"></i>
-                                    </a>
-                                    
-
-                                        
-
-                                                
-                                                    <a href="https://www.zhihu.com/people/quark-39/activities" class="tooltipped" target="_blank" data-tooltip="关注我的知乎: https://www.zhihu.com/people/quark-39/activities" data-position="top" data-delay="50">
-                                                        <i class="fab fa-zhihu1">知</i>
-                                                    </a>
-                                                    
-                                                        
-                                                            <a href="https://space.bilibili.com/20613590" class="tooltipped" target="_blank" data-tooltip="关注我的bilibili: https://space.bilibili.com/20613590" data-position="top" data-delay="50">
-                                                                <i class="fab iconfont icon-bilibili"></i>
-                                                            </a>
-                                                            
-
-                                                                </div>
-        </div>
     </div>
-
-    
 </div>
-
-<script>
-$(function () {
-    let coverSlider = $('.carousel');
-    coverSlider.carousel({
-        duration: Number('120'),
-        fullWidth: true,
-        indicators: 'true' === 'true'
-    });
-
-    let carouselIntervalId;
-    
-    // Loop to call the next cover article picture.
-    let autoCarousel = function() {
-        carouselIntervalId = setInterval(function () {
-            coverSlider.carousel('next');
-        }, 5000);
-    };
-    autoCarousel();
-    
-
-    let restartPlay = function () {
-        
-        clearInterval(carouselIntervalId);
-        autoCarousel();
-        
-    };
-
-    
-    // prev and next cover post.
-    $('#prev-cover').click(function () {
-        coverSlider.carousel('prev');
-        restartPlay();
-    });
-    $('#next-cover').click(function () {
-        coverSlider.carousel('next');
-        restartPlay();
-    });
-    
-});
-</script>
-
-
 
 <main class="content">
 
     
-    <div id="indexCard" class="index-card">
-        <div class="container ">
-            <div class="card">
-                <div class="card-content">
-                    
-                        <div class="dream">
-    
-    <div class="title center-align">
-        <i class="far fa-lightbulb"></i>  别愣着了
-    </div>
-    
-    <div class="row">
-        <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            想做什么就去，现在！
-        </div>
-    </div>
-</div>
-                    
 
-                    
-
-                    
-
-                    <div id="recommend-sections" class="recommend">
-                        
-
-
-
-                    </div>
-                </div>
+<div id="tags" class="container chip-container">
+    <div class="card">
+        <div class="card-content">
+            <div class="tag-title center-align">
+                <i class="fas fa-tags"></i>  文章标签
+            </div>
+            <div class="tag-chips">
+                
+                
+                <a href="/tags/看法/" title="看法: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-active " data-tagname="看法" style="background-color: #F9EBEA;">看法
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
             </div>
         </div>
     </div>
-    
+</div>
 
     
 
-    <!-- 所有文章卡片 -->
     <article id="articles" class="container articles">
-        <div class="row article-row">
+        <div class="row tags-posts">
             
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
+            
+            <div class="article tag-post col s12 m6 l4" data-tags="看法" data-aos="fade-up">
                 <div class="card">
                     <a href="/2019/10/06/di-yi-pian-bo-ke/">
-                        <div class="card-image">
+                        <div class="card-image tag-image">
                             
                             
                             <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="我对博客的看法">
@@ -525,16 +365,7 @@ $(function () {
                             <span class="card-title">我对博客的看法</span>
                         </div>
                     </a>
-
                     <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                不知道写些什么，随便上传一张照片QAQ插入图片 
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!
-                            
-                        </div>
                         <div class="publish-info">
                             <span class="publish-date">
                                 <i class="far fa-clock fa-fw icon-date"></i>2019-10-06
@@ -547,22 +378,11 @@ $(function () {
                             </span>
                         </div>
                     </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/看法/">
-                            <span class="chip bg-color">看法</span>
-                        </a>
-                        
-                    </div>
-                    
                 </div>
             </div>
             
         </div>
     </article>
-
 </main>
 
 
