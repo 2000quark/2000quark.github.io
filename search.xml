@@ -4,9 +4,28 @@
   
     
     <entry>
+      <title>博客的搭建方法</title>
+      <link href="/2019/10/08/bo-ke-de-da-jian-fang-fa/"/>
+      <url>/2019/10/08/bo-ke-de-da-jian-fang-fa/</url>
+      
+        <content type="html"><![CDATA[<html><head><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script></head><body></body></html>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> blog 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>我对博客的看法</title>
-      <link href="/2019/10/06/di-yi-pian-bo-ke/"/>
-      <url>/2019/10/06/di-yi-pian-bo-ke/</url>
+      <link href="/2019/10/06/guan-yu-wo-dui-bo-ke-de-kan-fa/"/>
+      <url>/2019/10/06/guan-yu-wo-dui-bo-ke-de-kan-fa/</url>
       
         <content type="html"><![CDATA[<html><head></head><body><h1 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h1><h3 id="作为一个编程小白，我怀着对博客的浓厚的兴趣，硬是搭建好了这一个博客，这算是兴趣使然吧-很久以前我就渴望着有一个可以自由分享自己想法的地方，如今能够实现这个愿望也算是完成了一个小小的目标，今后我会在博客更新一些有趣的是或物。如果你也对博客感兴趣，可以参考我的教程，希望能为你提供帮助。"><a href="#作为一个编程小白，我怀着对博客的浓厚的兴趣，硬是搭建好了这一个博客，这算是兴趣使然吧-很久以前我就渴望着有一个可以自由分享自己想法的地方，如今能够实现这个愿望也算是完成了一个小小的目标，今后我会在博客更新一些有趣的是或物。如果你也对博客感兴趣，可以参考我的教程，希望能为你提供帮助。" class="headerlink" title="作为一个编程小白，我怀着对博客的浓厚的兴趣，硬是搭建好了这一个博客，这算是兴趣使然吧!很久以前我就渴望着有一个可以自由分享自己想法的地方，如今能够实现这个愿望也算是完成了一个小小的目标，今后我会在博客更新一些有趣的是或物。如果你也对博客感兴趣，可以参考我的教程，希望能为你提供帮助。"></a>作为一个编程小白，我怀着对博客的浓厚的兴趣，硬是搭建好了这一个博客，这算是兴趣使然吧!很久以前我就渴望着有一个可以自由分享自己想法的地方，如今能够实现这个愿望也算是完成了一个小小的目标，今后我会在博客更新一些有趣的是或物。如果你也对博客感兴趣，可以参考我的教程，希望能为你提供帮助。</h3><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script></body></html>]]></content>
       
