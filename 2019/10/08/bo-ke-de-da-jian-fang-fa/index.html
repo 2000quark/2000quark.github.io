@@ -446,21 +446,24 @@
 <p>2.<strong>Git</strong>是一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目，它也可以取代Windows系统上自带的控制面板完成一些基本设置。当然它最重要的就是成为连接本地电脑与github的桥梁，至于github是什么，我想各位应该知道，他是世界上最大的同性交友网站，是千万程序猿的家。</p>
 <p>3.<strong>Hexo</strong> 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。Hexo基于Node.js，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub和Heroku上，是搭建博客的首选框架。</p>
 <hr>
-<h1 id="详细步骤"><a href="#详细步骤" class="headerlink" title="详细步骤"></a>详细步骤</h1><h2 id="1-安装必要框架"><a href="#1-安装必要框架" class="headerlink" title="1.安装必要框架"></a>1.安装必要框架</h2><h6 id="首先下载稳定版Node-js"><a href="#首先下载稳定版Node-js" class="headerlink" title="首先下载稳定版Node.js"></a>首先下载稳定版Node.js</h6><p>我这里给的是64位的,安装选项全部默认，一路点击Next。</p>
+<h1 id="详细步骤"><a href="#详细步骤" class="headerlink" title="详细步骤"></a>详细步骤</h1><h2 id="1-安装必要框架"><a href="#1-安装必要框架" class="headerlink" title="1.安装必要框架"></a>1.安装必要框架</h2><h4 id="首先下载稳定版Node-js"><a href="#首先下载稳定版Node-js" class="headerlink" title="首先下载稳定版Node.js"></a>首先下载稳定版Node.js</h4><p>我这里给的是64位的,安装选项全部默认，一路点击Next。</p>
 <p>最后安装好之后，按Win+R打开命令提示符，输入node -v和npm -v，如果出现版本号，那么就安装成功了。</p>
 <p><a href="https://nodejs.org/dist/v10.16.3/node-v10.16.3-x64.msi" target="_blank" rel="noopener">https://nodejs.org/dist/v10.16.3/node-v10.16.3-x64.msi</a></p>
-<h6 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h6><p>为了把本地的网页文件上传到github上面去，我们需要用到分布式版本控制工具————Git</p>
+<h4 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h4><p>为了把本地的网页文件上传到github上面去，我们需要用到分布式版本控制工具————Git</p>
 <p>安装选项还是全部默认。</p>
 <p>安装完成后在命令提示符中输入git –version验证是否安装成功。</p>
 <p> <a href="https://github.com/git-for-windows/git/releases/download/v2.23.0.windows.1/Git-2.23.0-64-bit.exe" target="_blank" rel="noopener">https://github.com/git-for-windows/git/releases/download/v2.23.0.windows.1/Git-2.23.0-64-bit.exe</a></p>
-<h6 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h6><p>在合适的地方新建一个文件夹，用来存放自己的博客文件，比如我的博客文件都存放在D:\blog目录下。</p>
+<h4 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h4><p>在合适的地方新建一个文件夹，用来存放自己的博客文件，比如我的博客文件都存放在D:\blog目录下。</p>
 <p>在该目录下右键点击Git Bash Here，打开git的控制台窗口，以后我们所有的操作都在git控制台进行，就不要用Windows自带的控制台了。</p>
 <p>定位到该目录下，输入npm i hexo-cli -g安装Hexo。会有几个报错，无视它就行。</p>
 <p>安装完后输入hexo -v验证是否安装成功。</p>
 <p>然后就要初始化我们的网站，输入hexo init初始化文件夹，接着输入npm install安装必备的组件。</p>
-<p>这样本地的网站配置也弄好啦，输入hexo g && hexo s打开本地服务器，然后浏览器打开<a href="http://localhost:4000/，就可以看到我们的博客啦" target="_blank" rel="noopener">http://localhost:4000/，就可以看到我们的博客啦</a></p>
+<p>这样本地的网站配置也弄好啦，输入hexo g && hexo s打开本地服务器，然后浏览器打开 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a><br>就可以看到我们的博客啦</p>
 <p>按ctrl+c关闭本地服务器</p>
-<h2 id="2-添加国内镜像源"><a href="#2-添加国内镜像源" class="headerlink" title="2.添加国内镜像源"></a>2.添加国内镜像源</h2><p>如果没有梯子的话，可以使用阿里的国内镜像进行加速。<br>在命令提示符或者git输入以下代码<br> <code>npm config set registry https://registry.npm.taobao.org</code> </p>
+<p>详细信息请参考官网说明<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/</a></p>
+<h2 id="2-添加国内镜像源"><a href="#2-添加国内镜像源" class="headerlink" title="2.添加国内镜像源"></a>2.添加国内镜像源</h2><p>如果没有梯子的话，可以使用阿里的国内镜像进行加速。</p>
+<p>在命令提示符或者git输入以下代码</p>
+<p> <code>npm config set registry https://registry.npm.taobao.org</code> </p>
 <h2 id="3-注册Github账号"><a href="#3-注册Github账号" class="headerlink" title="3.注册Github账号"></a>3.注册Github账号</h2><p>接下来就去注册一个github账号，用来存放我们的网站。大多数小伙伴应该都有了吧，作为一个合格的程序猿（媛）还是要有一个的。</p>
 <p>注册完后，登录到你的GitHub账号，点击GitHub中的New repository，创建一个新仓库，仓库名应该输入自己的用户名，后面一定要加.github.io后缀。名称一定要和你的github名字完全一样，比如你github名字叫abc，那么仓库名字一定要是abc.github.io。<br>然后项目就建成了，点击Settings，向下拉到最后有个GitHub Pages，点击Choose a theme选择一个主题。然后等一会儿，再回到GitHub Pages，在地址栏输入你的用户名.github.io就能看到你的主页了。</p>
 <h2 id="4-Git与GitHub帐号绑定"><a href="#4-Git与GitHub帐号绑定" class="headerlink" title="4.Git与GitHub帐号绑定"></a>4.Git与GitHub帐号绑定</h2><p>鼠标右击打开Git Bash，或者在菜单里搜索Git Bash打开，配置用户名和邮箱信息</p>
