@@ -4,19 +4,125 @@
   
     
     <entry>
-      <title>博客的搭建方法</title>
-      <link href="/2019/10/08/bo-ke-de-da-jian-fang-fa/"/>
-      <url>/2019/10/08/bo-ke-de-da-jian-fang-fa/</url>
+      <title>Adobe全家桶 ── 给传媒中心同学的福利</title>
+      <link href="/2019/10/10/adobe-quan-jia-tong/"/>
+      <url>/2019/10/10/adobe-quan-jia-tong/</url>
       
-        <content type="html"><![CDATA[<html><head></head><body><h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><h2 id="本教程是基于Hexo框架搭建博客的教程，需要下载Node-js和git。"><a href="#本教程是基于Hexo框架搭建博客的教程，需要下载Node-js和git。" class="headerlink" title="本教程是基于Hexo框架搭建博客的教程，需要下载Node.js和git。"></a>本教程是基于Hexo框架搭建博客的教程，需要下载Node.js和git。</h2><p>1.<strong>Node.js</strong>是一个基于Chrome JavaScript运行时建立的平台， 用于方便地搭建响应速度快、易于扩展的网络应用。（其实我也不知道是什么，但是知道它是我们搭建博客的必要框架就行了）</p><p>2.<strong>Git</strong>是一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目，它也可以取代Windows系统上自带的控制面板完成一些基本设置。当然它最重要的就是成为连接本地电脑与github的桥梁，至于github是什么，我想各位应该知道，他是世界上最大的同性交友网站，是千万程序猿的家。</p><p>3.<strong>Hexo</strong> 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。Hexo基于Node.js，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub和Heroku上，是搭建博客的首选框架。</p><hr><h1 id="详细步骤"><a href="#详细步骤" class="headerlink" title="详细步骤"></a>详细步骤</h1><h2 id="1-安装必要框架"><a href="#1-安装必要框架" class="headerlink" title="1.安装必要框架"></a>1.安装必要框架</h2><h4 id="首先下载稳定版Node-js"><a href="#首先下载稳定版Node-js" class="headerlink" title="首先下载稳定版Node.js"></a>首先下载稳定版Node.js</h4><p>我这里给的是64位的,安装选项全部默认，一路点击Next。</p><p>最后安装好之后，按Win+R打开命令提示符，输入node -v和npm -v，如果出现版本号，那么就安装成功了。</p><p><a href="https://nodejs.org/dist/v10.16.3/node-v10.16.3-x64.msi" target="_blank" rel="noopener">https://nodejs.org/dist/v10.16.3/node-v10.16.3-x64.msi</a></p><h4 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h4><p>为了把本地的网页文件上传到github上面去，我们需要用到分布式版本控制工具————Git</p><p>安装选项还是全部默认。</p><p>安装完成后在命令提示符中输入git –version验证是否安装成功。</p><p> <a href="https://github.com/git-for-windows/git/releases/download/v2.23.0.windows.1/Git-2.23.0-64-bit.exe" target="_blank" rel="noopener">https://github.com/git-for-windows/git/releases/download/v2.23.0.windows.1/Git-2.23.0-64-bit.exe</a></p><h4 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h4><p>在合适的地方新建一个文件夹，用来存放自己的博客文件，比如我的博客文件都存放在D:\blog目录下。</p><p>在该目录下右键点击Git Bash Here，打开git的控制台窗口，以后我们所有的操作都在git控制台进行，就不要用Windows自带的控制台了。</p><p>定位到该目录下，输入npm i hexo-cli -g安装Hexo。会有几个报错，无视它就行。</p><p>安装完后输入hexo -v验证是否安装成功。</p><p>然后就要初始化我们的网站，输入hexo init初始化文件夹，接着输入npm install安装必备的组件。</p><p>这样本地的网站配置也弄好啦，输入hexo g && hexo s打开本地服务器，然后浏览器打开 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a><br>就可以看到我们的博客啦</p><p>按ctrl+c关闭本地服务器</p><p>详细信息请参考官网说明<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/</a></p><h2 id="2-添加国内镜像源"><a href="#2-添加国内镜像源" class="headerlink" title="2.添加国内镜像源"></a>2.添加国内镜像源</h2><p>如果没有梯子的话，可以使用阿里的国内镜像进行加速。</p><p>在命令提示符或者git输入以下代码</p><p> <code>npm config set registry https://registry.npm.taobao.org</code> </p><h2 id="3-注册Github账号"><a href="#3-注册Github账号" class="headerlink" title="3.注册Github账号"></a>3.注册Github账号</h2><p>接下来就去注册一个github账号，用来存放我们的网站。大多数小伙伴应该都有了吧，作为一个合格的程序猿（媛）还是要有一个的。</p><p>注册完后，登录到你的GitHub账号，点击GitHub中的New repository，创建一个新仓库，仓库名应该输入自己的用户名，后面一定要加.github.io后缀。名称一定要和你的github名字完全一样，比如你github名字叫abc，那么仓库名字一定要是abc.github.io。<br>然后项目就建成了，点击Settings，向下拉到最后有个GitHub Pages，点击Choose a theme选择一个主题。然后等一会儿，再回到GitHub Pages，在地址栏输入你的用户名.github.io就能看到你的主页了。</p><h2 id="4-Git与GitHub帐号绑定"><a href="#4-Git与GitHub帐号绑定" class="headerlink" title="4.Git与GitHub帐号绑定"></a>4.Git与GitHub帐号绑定</h2><p>鼠标右击打开Git Bash，或者在菜单里搜索Git Bash打开，配置用户名和邮箱信息</p><p><code>git config --global user.name "user.name"</code><br><code>git config --global user.email "user.email"</code></p><p>user.name是你的GitHub用户名，user.email是GitHub绑定的邮箱，下同。</p><p><strong>生成ssh密钥文件：</strong></p><p><code>ssh-keygen -t rsa -C "user.email"</code></p><p>接下来按回车确定，问enter file in which….时输入 ./ssh (不要忘了最前面的点)。然后系统会在你的blog文件夹下创建一个ssh.pub,记住是ssh.pub不是ssh，打开ssh.pub并复制里面的内容。</p><p><img src="https://i.loli.net/2019/10/09/OoTNyWAM4nwizGv.png" alt="打开前.PNG"></p><p><img src="https://i.loli.net/2019/10/09/tZpFdxqHbrBMG9s.png" alt="打开后.PNG"></p><p><strong>绑定账号</strong><br>打开github，在头像下面点击settings，再点击SSH and GPG keys，新建一个SSH，名字随便，然后在下面贴贴你之前复制的密钥。<br>再在git中输入 <code>ssh -T git@github.com -i ./ssh</code> 如果出现你的用户名，那就成功了。然后会弹出一个登陆界面，登陆你的github账号就行了。</p><h2 id="5-上传博客的准备工作"><a href="#5-上传博客的准备工作" class="headerlink" title="5.上传博客的准备工作"></a>5.上传博客的准备工作</h2><p>先推荐一个超级好用的写代码的工具<strong>vs code</strong> ，它可以帮助我们写一些简单的代码，也可以写markdown，就是写博客的工具。<br>下载地址<a href="https://code.visualstudio.com/Download#" target="_blank" rel="noopener">https://code.visualstudio.com/Download#</a><br>用它打开blog/_config,yml，找到<br><code>16  url: http://2000quark.github.io</code><br>将2000quark改成你github的ID，2000quark是我的ID,默认是什么我忘记了。</p><p>这也是你博客的网址，当然如果你觉得这个网址没有牌面，你也可以购买一个域名.</p><p>下面同样将2000quark改成你的ID,两个都要改</p><p><img src="https://i.loli.net/2019/10/09/PgxKSLMfthzO4yF.png" alt="推送位置.png"></p><h2 id="6-写文章、发布文章"><a href="#6-写文章、发布文章" class="headerlink" title="6.写文章、发布文章"></a>6.写文章、发布文章</h2><p><strong>到现在我们终于搭建好了一个博客，让我们试着写下第一篇文章吧</strong></p><p>首先在博客根目录下右键打开git bash，安装一个扩展npm i hexo-deployer-git。</p><p>然后输入hexo new post “文章标题”，新建一篇文章。</p><p>然后打开blog\source_posts的目录，可以发现下面多了一个.md文件，它就是你的文章文件啦。</p><p>文章是用markdown写的，以后我也会出一个markdown的教程。</p><p>编写完markdown文件后，根目录下输入hexo g生成静态网页，然后输入hexo s可以本地预览效果，最后输入hexo d上传到github上。</p><p>这时打开你的github.io主页就能看到发布的文章啦。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script></body></html>]]></content>
+        <content type="html"><![CDATA[<html><head></head><body><h1 id="大家好，能够作为传媒中心的一员，我感到十分荣幸！！！"><a href="#大家好，能够作为传媒中心的一员，我感到十分荣幸！！！" class="headerlink" title="大家好，能够作为传媒中心的一员，我感到十分荣幸！！！"></a>大家好，能够作为传媒中心的一员，我感到十分荣幸！！！</h1><h2 id="在此我想给大家一个小小福利，那就是adobe家的各种软件的破解版。"><a href="#在此我想给大家一个小小福利，那就是adobe家的各种软件的破解版。" class="headerlink" title="在此我想给大家一个小小福利，那就是adobe家的各种软件的破解版。"></a>在此我想给大家一个小小福利，那就是adobe家的各种软件的破解版。</h2><h2 id="我想在接下来的日子里我们一定会用到，哪怕用不到，也能学习到不少东西。"><a href="#我想在接下来的日子里我们一定会用到，哪怕用不到，也能学习到不少东西。" class="headerlink" title="我想在接下来的日子里我们一定会用到，哪怕用不到，也能学习到不少东西。"></a>我想在接下来的日子里我们一定会用到，哪怕用不到，也能学习到不少东西。</h2><p>  <strong>Pr</strong> <a href="https://pan.baidu.com/s/19vsDU1ijsgBQnlzKv8KI6g" target="_blank" rel="noopener">https://pan.baidu.com/s/19vsDU1ijsgBQnlzKv8KI6g</a><br>  <strong>Ps</strong> <a href="https://pan.baidu.com/s/1v93EYMYokmZZkRBXFnZ5PQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1v93EYMYokmZZkRBXFnZ5PQ</a><br>  <strong>AE</strong> <a href="https://pan.baidu.com/s/1pDTFh42Rlb4ov7NwdIVbKQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1pDTFh42Rlb4ov7NwdIVbKQ</a><br>  <strong>LR</strong> <a href="https://pan.baidu.com/s/1MjyP1N2M5Dqv1RpbtorvMw" target="_blank" rel="noopener">https://pan.baidu.com/s/1MjyP1N2M5Dqv1RpbtorvMw</a><br>  <strong>合集</strong> <a href="https://pan.baidu.com/s/1uGiwqU9HMU16AYDIop-ACw" target="_blank" rel="noopener">https://pan.baidu.com/s/1uGiwqU9HMU16AYDIop-ACw</a> 提取码: 6nd8 </p><p><strong>如果你们还需要其他的软件也可以告诉我，我会尽量帮你们找到的</strong></p><h2 id="安装教程"><a href="#安装教程" class="headerlink" title="安装教程"></a>安装教程</h2><p>这里我以PS为例子，下载好了之后首先解压，然后安装主程序。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script></body></html>]]></content>
       
       
       
         <tags>
             
-            <tag> blog </tag>
+            <tag> 临时 </tag>
+            
+            <tag> 软件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>二次元与三次元照片互相转化</title>
+      <link href="/2019/10/10/er-ci-yuan-yu-san-ci-yuan-zhao-pian-hu-xiang-zhuan-hua/"/>
+      <url>/2019/10/10/er-ci-yuan-yu-san-ci-yuan-zhao-pian-hu-xiang-zhuan-hua/</url>
+      
+        <content type="html"><![CDATA[<html><head></head><body><p>编辑中</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script></body></html>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>去除马赛克和水印</title>
+      <link href="/2019/10/10/qu-chu-ma-sai-ke-he-shui-yin/"/>
+      <url>/2019/10/10/qu-chu-ma-sai-ke-he-shui-yin/</url>
+      
+        <content type="html"><![CDATA[<html><head></head><body><p>编辑中</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script></body></html>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>无损放大技术哪家强</title>
+      <link href="/2019/10/10/wu-sun-fang-da-ji-zhu-na-jia-qiang/"/>
+      <url>/2019/10/10/wu-sun-fang-da-ji-zhu-na-jia-qiang/</url>
+      
+        <content type="html"><![CDATA[<html><head></head><body><p>编辑中</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script></body></html>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>markdown的用法</title>
+      <link href="/2019/10/10/xin-jian-wen-jian-jia/dai-ding-1/"/>
+      <url>/2019/10/10/xin-jian-wen-jian-jia/dai-ding-1/</url>
+      
+        <content type="html"><![CDATA[<html><head><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script></head><body></body></html>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>markdown的基础教程</title>
+      <link href="/2019/10/09/markdown/"/>
+      <url>/2019/10/09/markdown/</url>
+      
+        <content type="html"><![CDATA[<html><head></head><body><h1 id="什么是Markdown格式"><a href="#什么是Markdown格式" class="headerlink" title="什么是Markdown格式"></a>什么是Markdown格式</h1><p> Markdown格式是一种可用普通文本编辑器编写的标记语言，使用者能够通过简单的标记语法，对自己所写文本内容进行简单的格式排版</p><h1 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h1><p> 语法简洁易学，且功能比纯文本强大<br> 格式转换方便，兼容性强，可读性极好</p><h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><p> 在文字前加一个 # 就是标题了，每多加一级则添加一个 # 号，一共有六级</p><h1 id="加粗"><a href="#加粗" class="headerlink" title="加粗"></a>加粗</h1><p> 两个连续 * 或者 _ 包含内容</p><h1 id="斜体"><a href="#斜体" class="headerlink" title="斜体"></a>斜体</h1><p>一个 * 或者 _ 包含内容</p><h1 id="横线"><a href="#横线" class="headerlink" title="横线"></a>横线</h1><p> 两个 ~~ 包含</p><h1 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h1><p> 三个及以上的 *、_、- 用于建立分割线</p><h1 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h1><p>三个连续 ` 包含代码内容</p><h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>单个 > 标记区块引用</p><h1 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h1><p><img src="https://i.loli.net/2019/10/11/WvaTreMwZyG6OjS.jpg" alt="链接.jpg"></p><h1 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h1><p>图片比较麻烦，需要找到合适的图床，我也是找了好久才找到的。这里我推荐一个免费的图床<a href="https://sm.ms/" target="_blank" rel="noopener">https://sm.ms/</a><br>上传图片后直接复制markdown格式的网址就行了</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script></body></html>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
             
             <tag> 教程 </tag>
+            
+            <tag> markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>博客的搭建方法</title>
+      <link href="/2019/10/08/bo-ke-de-da-jian-fang-fa/"/>
+      <url>/2019/10/08/bo-ke-de-da-jian-fang-fa/</url>
+      
+        <content type="html"><![CDATA[<html><head></head><body><h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><h2 id="本教程是基于Hexo框架搭建博客的教程，需要下载Node-js和git。"><a href="#本教程是基于Hexo框架搭建博客的教程，需要下载Node-js和git。" class="headerlink" title="本教程是基于Hexo框架搭建博客的教程，需要下载Node.js和git。"></a>本教程是基于Hexo框架搭建博客的教程，需要下载Node.js和git。</h2><p>1.<strong>Node.js</strong>是一个基于Chrome JavaScript运行时建立的平台， 用于方便地搭建响应速度快、易于扩展的网络应用。（其实我也不知道是什么，但是知道它是我们搭建博客的必要框架就行了）</p><p>2.<strong>Git</strong>是一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目，它也可以取代Windows系统上自带的控制面板完成一些基本设置。当然它最重要的就是成为连接本地电脑与github的桥梁，至于github是什么，我想各位应该知道，他是世界上最大的同性交友网站，是千万程序猿的家。</p><p>3.<strong>Hexo</strong> 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。Hexo基于Node.js，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub和Heroku上，是搭建博客的首选框架。</p><hr><h1 id="详细步骤"><a href="#详细步骤" class="headerlink" title="详细步骤"></a>详细步骤</h1><h2 id="1-安装必要框架"><a href="#1-安装必要框架" class="headerlink" title="1.安装必要框架"></a>1.安装必要框架</h2><h4 id="首先下载稳定版Node-js"><a href="#首先下载稳定版Node-js" class="headerlink" title="首先下载稳定版Node.js"></a>首先下载稳定版Node.js</h4><p>我这里给的是64位的,安装选项全部默认，一路点击Next。</p><p>最后安装好之后，按Win+R打开命令提示符，输入node -v和npm -v，如果出现版本号，那么就安装成功了。</p><p><a href="https://nodejs.org/dist/v10.16.3/node-v10.16.3-x64.msi" target="_blank" rel="noopener">https://nodejs.org/dist/v10.16.3/node-v10.16.3-x64.msi</a></p><h4 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h4><p>为了把本地的网页文件上传到github上面去，我们需要用到分布式版本控制工具————Git</p><p>安装选项还是全部默认。</p><p>安装完成后在命令提示符中输入git –version验证是否安装成功。</p><p> <a href="https://github.com/git-for-windows/git/releases/download/v2.23.0.windows.1/Git-2.23.0-64-bit.exe" target="_blank" rel="noopener">https://github.com/git-for-windows/git/releases/download/v2.23.0.windows.1/Git-2.23.0-64-bit.exe</a></p><h4 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h4><p>在合适的地方新建一个文件夹，用来存放自己的博客文件，比如我的博客文件都存放在D:\blog目录下。</p><p>在该目录下右键点击Git Bash Here，打开git的控制台窗口，以后我们所有的操作都在git控制台进行，就不要用Windows自带的控制台了。</p><p>定位到该目录下，输入npm i hexo-cli -g安装Hexo。会有几个报错，无视它就行。</p><p>安装完后输入hexo -v验证是否安装成功。</p><p>然后就要初始化我们的网站，输入hexo init初始化文件夹，接着输入npm install安装必备的组件。</p><p>这样本地的网站配置也弄好啦，输入hexo g && hexo s打开本地服务器，然后浏览器打开 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a></p><p>就可以看到我们的博客啦</p><p>按ctrl+c关闭本地服务器</p><p>详细信息请参考官网说明<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/</a></p><h2 id="2-添加国内镜像源"><a href="#2-添加国内镜像源" class="headerlink" title="2.添加国内镜像源"></a>2.添加国内镜像源</h2><p>如果没有梯子的话，可以使用阿里的国内镜像进行加速。</p><p>在命令提示符或者git输入以下代码</p><p> <code>npm config set registry https://registry.npm.taobao.org</code> </p><h2 id="3-注册Github账号"><a href="#3-注册Github账号" class="headerlink" title="3.注册Github账号"></a>3.注册Github账号</h2><p>接下来就去注册一个github账号，用来存放我们的网站。大多数小伙伴应该都有了吧，作为一个合格的程序猿（媛）还是要有一个的。</p><p>注册完后，登录到你的GitHub账号，点击GitHub中的New repository，创建一个新仓库，仓库名应该输入自己的用户名，后面一定要加.github.io后缀。名称一定要和你的github名字完全一样，比如你github名字叫abc，那么仓库名字一定要是abc.github.io。</p><p>然后项目就建成了，点击Settings，向下拉到最后有个GitHub Pages，点击Choose a theme选择一个主题。然后等一会儿，再回到GitHub Pages，在地址栏输入你的用户名.github.io就能看到你的主页了。</p><h2 id="4-Git与GitHub帐号绑定"><a href="#4-Git与GitHub帐号绑定" class="headerlink" title="4.Git与GitHub帐号绑定"></a>4.Git与GitHub帐号绑定</h2><p>鼠标右击打开Git Bash，或者在菜单里搜索Git Bash打开，配置用户名和邮箱信息</p><p><code>git config --global user.name "user.name"</code><br><code>git config --global user.email "user.email"</code></p><p>user.name是你的GitHub用户名，user.email是GitHub绑定的邮箱，下同。</p><p><strong>生成ssh密钥文件：</strong></p><p><code>ssh-keygen -t rsa -C "user.email"</code></p><p>接下来按回车确定，问enter file in which….时输入 ./ssh (不要忘了最前面的点)。然后系统会在你的blog文件夹下创建一个ssh.pub,记住是ssh.pub不是ssh，打开ssh.pub并复制里面的内容。</p><p><img src="https://i.loli.net/2019/10/09/OoTNyWAM4nwizGv.png" alt="打开前.PNG"></p><p><img src="https://i.loli.net/2019/10/09/tZpFdxqHbrBMG9s.png" alt="打开后.PNG"></p><p><strong>绑定账号</strong></p><p>打开github，在头像下面点击settings，再点击SSH and GPG keys，新建一个SSH，名字随便，然后在下面贴贴你之前复制的密钥。<br>再在git中输入 <code>ssh -T git@github.com -i ./ssh</code> 如果出现你的用户名，那就成功了。然后会弹出一个登陆界面，登陆你的github账号就行了。</p><h2 id="5-上传博客的准备工作"><a href="#5-上传博客的准备工作" class="headerlink" title="5.上传博客的准备工作"></a>5.上传博客的准备工作</h2><p>先推荐一个超级好用的写代码的工具<strong>vs code</strong> ，它可以帮助我们写一些简单的代码，也可以写markdown，就是写博客的工具。</p><p>下载地址<a href="https://code.visualstudio.com/Download#" target="_blank" rel="noopener">https://code.visualstudio.com/Download#</a></p><p>用它打开blog/_config,yml，找到</p><p><code>16  url: http://2000quark.github.io</code> </p><p>将2000quark改成你github的ID，2000quark是我的ID,默认是什么我忘记了。</p><p>这也是你博客的网址，当然如果你觉得这个网址没有牌面，你也可以购买一个域名.</p><p>下面同样将2000quark改成你的ID,两个都要改</p><p><img src="https://i.loli.net/2019/10/09/PgxKSLMfthzO4yF.png" alt="推送位置.png"></p><h2 id="6-写文章、发布文章"><a href="#6-写文章、发布文章" class="headerlink" title="6.写文章、发布文章"></a>6.写文章、发布文章</h2><p><strong>到现在我们终于搭建好了一个博客，让我们试着写下第一篇文章吧</strong></p><p>首先在博客根目录下右键打开git bash，安装一个扩展npm i hexo-deployer-git。</p><p>然后输入hexo new post “文章标题”，新建一篇文章。</p><p>然后打开blog\source_posts的目录，可以发现下面多了一个.md文件，它就是你的文章文件啦。</p><p>文章是用markdown写的，以后我也会出一个markdown的教程。</p><p>编写完markdown文件后，根目录下输入hexo g生成静态网页，然后输入hexo s可以本地预览效果，最后输入hexo d上传到github上。</p><p>这时打开你的github.io主页就能看到发布的文章啦。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script></body></html>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+            <tag> blog </tag>
             
         </tags>
       
@@ -32,10 +138,18 @@
         <content type="html"><![CDATA[<html><head></head><body><h1 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h1><h3 id="作为一个编程小白，我怀着对博客的浓厚的兴趣，硬是搭建好了这一个博客，这算是兴趣使然吧-很久以前我就渴望着有一个可以自由分享自己想法的地方，如今能够实现这个愿望也算是完成了一个小小的目标，今后我会在博客更新一些有趣的东西。如果你也对博客感兴趣，可以参考我的教程，希望能为你提供帮助。"><a href="#作为一个编程小白，我怀着对博客的浓厚的兴趣，硬是搭建好了这一个博客，这算是兴趣使然吧-很久以前我就渴望着有一个可以自由分享自己想法的地方，如今能够实现这个愿望也算是完成了一个小小的目标，今后我会在博客更新一些有趣的东西。如果你也对博客感兴趣，可以参考我的教程，希望能为你提供帮助。" class="headerlink" title="作为一个编程小白，我怀着对博客的浓厚的兴趣，硬是搭建好了这一个博客，这算是兴趣使然吧!很久以前我就渴望着有一个可以自由分享自己想法的地方，如今能够实现这个愿望也算是完成了一个小小的目标，今后我会在博客更新一些有趣的东西。如果你也对博客感兴趣，可以参考我的教程，希望能为你提供帮助。"></a>作为一个编程小白，我怀着对博客的浓厚的兴趣，硬是搭建好了这一个博客，这算是兴趣使然吧!很久以前我就渴望着有一个可以自由分享自己想法的地方，如今能够实现这个愿望也算是完成了一个小小的目标，今后我会在博客更新一些有趣的东西。如果你也对博客感兴趣，可以参考我的教程，希望能为你提供帮助。</h3><h1 id="博客的优点"><a href="#博客的优点" class="headerlink" title="博客的优点"></a>博客的优点</h1><h3 id="1记录收获。"><a href="#1记录收获。" class="headerlink" title="1记录收获。"></a>1记录收获。</h3><p>blog中，常常是记录下来都是瞬间的灵感，对事物的感悟，经过多日思考和实践的结果，对某个问题的解决方案等等，这些都是财富。要记录下来。 </p><h3 id="2-反映成长。"><a href="#2-反映成长。" class="headerlink" title="2 反映成长。"></a>2 反映成长。</h3><p>写blog，可以反映出人的思考过程，而不仅仅是思考结果。对一个问题或领域，从不了解到了解，从了解到熟悉，从熟悉到精通。这纪录了一个人思考和解决问题的成长过程。很久之后，看到自己之前的文章，你觉得自己进步了吗？</p><h3 id="3-结交朋友。"><a href="#3-结交朋友。" class="headerlink" title="3 结交朋友。"></a>3 结交朋友。</h3><p>写了blog，自然会有许多志趣相同的朋友来阅读，这可以认识许多朋友。大家有共同的兴趣爱好，自然谈得来。</p><h3 id="4-共享知识。"><a href="#4-共享知识。" class="headerlink" title="4 共享知识。"></a>4 共享知识。</h3><p>blog给大家看，大家的blog也给你看。这个问题我解决了，那个问题他解决了。大家互通有无，建立起一个社群，总好过闭门造车。</p><h3 id="5-交流看法。"><a href="#5-交流看法。" class="headerlink" title="5 交流看法。"></a>5 交流看法。</h3><p>回复的人对blog的观点或赞同，或反对，大家一起讨论，听听别人的思想，可以促进双方的共同进步。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script></body></html>]]></content>
       
       
+      <categories>
+          
+          <category> 看法 </category>
+          
+      </categories>
+      
       
         <tags>
             
             <tag> 看法 </tag>
+            
+            <tag> blog </tag>
             
         </tags>
       
